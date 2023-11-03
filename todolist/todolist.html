@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="todolist.css">
+    <title>To-do</title>
+</head>
+<body>
+
+    <!-- This section contains the Sidebar elements -->
+    <section id="sidebar">
+
+        <div class="sBarBackground"> <!-- Background of the sidebar-->
+            <div id="sidebarTop">
+                <div id="sidebarTitle">
+                    <h2>Alex's Space</h2>
+                </div>
+        
+                <!-- These divs contain the different pages you can go to on the site -->
+                <div class="sidebarDifferentPageBox">
+                    <a href="/todolist/todolist.html" class="todoLink"> 
+                        <button class="sidebarDifferentPageLink">
+                            ☑ 
+                            <h3>To-Do List</h3>
+                        </button>
+                    </a>
+                </div>
+                    
+                <div class="sidebarDifferentPageBox">
+                    <a href="/calendar/calendar.html" class="todoLink"> 
+                        <button class="sidebarDifferentPageLink">
+                            📅
+                            <h3>Calendar</h3>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="sidebarBottom">
+                <div class="sidebarDifferentPageBox">
+                    <a href="/help_screen/help_screen.html" class="todoLink"> 
+                        <button class="sidebarDifferentPageLink">
+                            ❓ 
+                            <h3>Help</h3>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            
+    
+        </div>
+
+    </section>
+
+    <section id="todo">
+
+    <div class="container">
+        <!-- <h1 class="title">Today's To-do List</h1> -->
+        <div class="container">
+            <div id="inputContainer">
+                <h1 id="todoListTitle">Todo List</h1>
+                <div id="formContainer">
+                    <input type="text" id="todoInput" placeholder="Enter a task">
+                    <button class="button" onclick="addTodo()">Add</button>
+                </div>
+            </div>
+            <ul id="todoList" class="todo-list"></ul>
+        </div>
+    </div>  
+
+    <script src="todolist.js"></script>
+</section>
+    
+</body>
+</html>
